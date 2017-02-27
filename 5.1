@@ -1,0 +1,12 @@
+def clean_list(list_to_clean):
+        list_new = []
+        for i in range(len(list_to_clean)):
+            x = list_to_clean[i]
+            flag = False
+            for j in range(len(list_new)):
+                if x == list_new[j] and type(x) == type(list_new[j]):
+                    flag = True
+                    break
+            if not flag:
+                list_new.append(x)
+        return(list_new)
