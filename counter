@@ -8,3 +8,19 @@
 Повертає: 2
 Виклик функції: counter(123, 45)
 Повертає: 0
+
+def counter(a, b):
+    A = list(str(a))
+    B = list(str(b))
+
+    for i in A:
+       count = 0
+       for j in B:
+           if i == j:
+               count += 1
+    return count            
+
+
+print(counter(12345,567))
+print(counter(1233211, 12128))
+print(counter(123, 45))
